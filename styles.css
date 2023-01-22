@@ -1,8 +1,16 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
 #grid_container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 80%;
+    /* grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%; */
+    grid-template-columns: clamp(220px, 15%, 280px) 4fr;
+    grid-template-rows: 1fr 4fr
 }
 
 #form_dashboard {
@@ -19,28 +27,51 @@
 }
 
 #header_search {
-    margin-left: 10%;
+    padding-left: 10%;
     display: flex;
     align-items: center;
 }
 
-#header_profile{
+#header_profile {
     background-color: rgb(154, 154, 32);
 }
 
 #header_greeting {
-    margin-left: 10%;
+    padding-left: 10%;
     display: flex;
+    align-items: center;
+    background-color: green;
+}
+
+#header_quickmenu {
+    display: flex;
+    justify-content: space-around;
+    background-color: purple;
     align-items: center;
 }
 
-#header_quickmenu{
-    background-color: purple;
+#header_quickmenu>button {
+    text-decoration: none;
+    color: white;
+    background-color: steelblue;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
 }
 
 #form_body {
     background-color: gray;
     grid-row: 2/4;
+}
+
+#header_greeting {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+#header_menu {
+    display: none;
 }
 
 a {
@@ -53,4 +84,82 @@ ul {
 
 input {
     width: 70%;
+}
+
+@media only screen and (max-width: 50rem) {
+    /* #form_dashboard {
+        display: none;
+    } */
+
+    #form_header {
+        grid-template-rows: 50%;
+        grid-template-columns: 100%;
+    }
+
+    #grid_container {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    #header_greeting {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+
+    #header_search,
+    #header_profile {
+        display: none;
+    }
+
+    #header_quickmenu {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    /* #header_menu{
+        display: block;
+    } */
+
+}
+
+@media only screen and (max-width: 500px) {
+    #form_dashboard {
+        display: none;
+    }
+
+    #form_header {
+        grid-template-rows: 50%;
+        grid-template-columns: 100%;
+    }
+
+    #grid_container {
+        grid-template-columns: 4fr;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    #header_greeting {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+
+    #header_search,
+    #header_profile {
+        display: none;
+    }
+
+    #header_quickmenu {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    #header_menu {
+        display: block;
+    }
+
 }
