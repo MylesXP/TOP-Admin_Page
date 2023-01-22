@@ -1,0 +1,56 @@
+#grid_container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+}
+
+#form_dashboard {
+    background-color: aqua;
+    grid-row: 1/4;
+}
+
+#form_header {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    background-color: salmon;
+    /* grid-row: 1/4; */
+}
+
+#header_search {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#header_profile{
+    background-color: rgb(154, 154, 32);
+}
+
+#header_greeting {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#header_quickmenu{
+    background-color: purple;
+}
+
+#form_body {
+    background-color: gray;
+    grid-row: 2/4;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    width: 70%;
+}
