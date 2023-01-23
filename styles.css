@@ -16,7 +16,16 @@ html {
 #form_dashboard {
     background-color: aqua;
     grid-row: 1/4;
+    padding-left: 10%;
 }
+
+#form_dashboard > ul {
+    padding-left: 0;
+}
+
+/* #form_dashboard > h4 {
+    text-align: center;
+} */
 
 #form_header {
     display: grid;
@@ -54,9 +63,15 @@ html {
     text-decoration: none;
     color: white;
     background-color: steelblue;
-    padding: 10px;
+    padding-block: 0.4rem;
+    padding-inline: .8rem;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
+}
+
+#header_quickmenu>button:hover {
+    background-color: rgb(64, 120, 165);
 }
 
 #form_body {
@@ -86,15 +101,7 @@ input {
     width: 70%;
 }
 
-@media only screen and (max-width: 50rem) {
-    /* #form_dashboard {
-        display: none;
-    } */
-
-    #form_header {
-        grid-template-rows: 50%;
-        grid-template-columns: 100%;
-    }
+/* @media only screen and (max-width: 50rem) {
 
     #grid_container {
         grid-template-columns: 1fr 4fr;
@@ -118,14 +125,9 @@ input {
         align-items: center;
     }
 
+} */
 
-    /* #header_menu{
-        display: block;
-    } */
-
-}
-
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     #form_dashboard {
         display: none;
     }
@@ -162,4 +164,74 @@ input {
         display: block;
     }
 
+} */
+
+@media only screen and (max-width: 500px){
+    #form_header {
+        grid-template-rows: 25%;
+        grid-template-columns: 100%;
+    }
+
+    #form_dashboard{
+        display: none;
+    }
+
+    #header_profile{
+        display: none;
+    }
+
+    #grid_container {
+        grid-template-columns: 4fr;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    #header_search{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    #header_menu{
+        display: block;
+    }
+
 }
+
+@media only screen and (min-width: 500px) and (max-width: 1020px) {
+    /* #header_search,
+    #header_profile {
+        display: block;
+    } */
+
+    /* #form_header {
+        grid-template-rows: 50%;
+        grid-template-columns: 100%;
+    }
+
+    #grid_container {
+        grid-template-columns: 4fr;
+        grid-template-rows: 1fr 4fr;
+    } */
+
+    #header_search{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    #form_header {
+        grid-template-rows: 30% 30% 40%;
+        grid-template-columns: 100%;
+    }
+
+    #header_profile{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+
+}
+
