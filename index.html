@@ -7,35 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/05161720c0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="grid_container">
         <div id="form_dashboard">
-            <h4>Dashboard</h4>
+            <h4><i class="fa-solid fa-chart-line fa-2x"></i>Dashboard</h4>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Profile</a></li>
-                <li><a href="">Messages</a></li>
-                <li><a href="">History</a></li>
-                <li><a href="">Tasks</a></li>
-                <li><a href="">Communities</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="">Profile</a></li>
+                <li><i class="fa-solid fa-message"></i><a href="">Messages</a></li>
+                <li><i class="fa-solid fa-clock"></i><a href="">History</a></li>
+                <li><i class="fa-solid fa-list-check"></i><a href="">Tasks</a></li>
+                <li><i class="fa-solid fa-users-line"></i><a href="">Communities</a></li>
             </ul>
             <ul>
-                <li><a href="">Settings</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="">Privacy</a></li>
+                <li><i class="fa-solid fa-gear"></i><a href="">Settings</a></li>
+                <li><i class="fa-solid fa-circle-question"></i><a href="">Support</a></li>
+                <li><i class="fa-solid fa-lock"></i><a href="">Privacy</a></li>
             </ul>
         </div>
         <div id="form_header">
             <div id="header_search">
-                <span id="header_search__icon">*</span> <input type="search"> <span id="header_mobilenotif">No</span>
+                <div id="search_container"><img id="header_search__icon" src="images/search.svg" alt=""><input id="search_bar" type="search"></div><img id="header_mobilenotif" src="images/notif.png" alt="">
             </div>
-            <div id="header_profile"><span id="header_notif">No</span> <span id="header_profilepic">Pic</span> <span>Morgan Oakley</span></div>
+            <div id="header_profile"><span id="header_notif">No</span> <span id="header_profilepic">Pic</span>
+                <span>Morgan Oakley</span></div>
             <div id="header_handle">
-                <span id="header_handlepic">Pic</span><div id="header_handlecontainer"><div><h5 style="margin: 0;">Hi there,</h5>Morgan Oakley (@morgan)</div></div><span id="header_menu">Menu</span>
+                <span id="header_handlepic"><img src="images/profile.png" alt=""></span>
+                <div id="header_handlecontainer">
+                    <div>
+                        <h5 style="margin: 0;">Hi there,</h5>Morgan Oakley (@morgan)
+                    </div>
+                </div><span id="header_menu"><img src="images/hamburger.png" alt=""></span>
             </div>
-            <div id="header_quickmenu"><button href="#">New</button> <button href="#">Upload</button> <button href="#">Share</button></div>
+            <div id="header_quickmenu"><button href="#">New</button> <button href="#">Upload</button> <button
+                    href="#">Share</button></div>
         </div>
         <div id="form_body">dsssssss</div>
     </div>
