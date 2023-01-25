@@ -141,7 +141,7 @@ li>a {
     background-color: steelblue;
     padding-block: 0.4rem;
     padding-inline: 1rem;
-    font-size: .6rem;
+    /* font-size: .6rem; */
     border-radius: 30px;
     border: none;
     cursor: pointer;
@@ -356,6 +356,10 @@ input {
 
     #header_quickmenu {
         padding-block: 10px;
+    }
+
+    #header_quickmenu{
+        font-size: .6rem;
     }
 
     /* #header_handlepic img {
