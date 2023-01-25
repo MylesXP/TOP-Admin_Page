@@ -3,6 +3,7 @@ html {
     height: 100%;
     margin: 0;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+    box-sizing: border-box;
 }
 
 #grid_container {
@@ -16,11 +17,17 @@ html {
 
 #form_dashboard {
     background-color: rgb(22, 142, 216);
-    grid-row: 1/4;
+    grid-row: 1/5;
     padding-left: 10%;
     color: white;
     display: flex;
     flex-direction: column;
+    /* background-color: rgb(22, 142, 216);
+    grid-row: 1/4;
+    padding-left: 10%;
+    color: white;
+    display: flex;
+    flex-direction: column; */
 }
 
 li .fa-solid {
@@ -132,8 +139,9 @@ li>a {
     color: white;
     background-color: steelblue;
     padding-block: 0.4rem;
-    padding-inline: .8rem;
-    border-radius: 6px;
+    padding-inline: 1rem;
+    font-size: .6rem;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
 }
@@ -144,20 +152,49 @@ li>a {
 
 #form_body {
     background-color: #E2E8F0;
-    grid-row: 2/4;
+    grid-row: 2/-1;
     display: grid;
-    grid-template-columns: repeat(2, 2fr) 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-columns: repeat(2, 2fr); */
+    /* grid-template-rows: 1fr 8fr 8fr; */
+    gap: 15px;
+    padding: 20px;
+    /* height: 200vh; */
 }
 
 #form_body__header{
     grid-column: 1/-1;
 }
 
+#form_body__header > h5{
+    margin: 0;
+    padding-left: 10px;
+}
+
 .form-item{
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    border-left: 5px solid orange;
+    border-radius: 5px;
+    margin-inline: 10px;
+    padding-block: 20px;
+}
+
+.form-item > div {
+    margin-inline: 20px;
+    /* margin-block-end: 30px; */
+}
+
+.form-item h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-item p {
+    margin-block: 0;
+    font-size: .7rem;
+    
 }
 
 #form_item__buttons{
@@ -168,8 +205,12 @@ li>a {
     margin-block: 10px;
 }
 
-#form_item__buttons > div > .fa-solid:nth-child(2){
-    padding-inline: 10px;
+#form_item__buttons > div > .fa-regular:nth-child(2){
+    margin-inline: 20px;
+}
+
+#form_item__buttons > div > *{
+    cursor: pointer;
 }
 
 #form_item__buttons > div{
@@ -177,19 +218,6 @@ li>a {
     display: flex;
 }
 
-.form-item > div {
-    margin-inline: 10px;
-    margin-block-end: 40px;
-}
-
-.form-item h5 {
-    margin-bottom: 0;
-}
-
-.form-item p {
-    margin-block: 0;
-    font-size: .7rem;
-}
 
 #header_handle {
     display: grid;
@@ -270,6 +298,10 @@ input {
 
     #header_menu img {
         width: clamp(30px, 8%, 50px);
+    }
+
+    #header_quickmenu{
+        padding-block: 10px;
     }
 
     /* #header_handlepic img {
