@@ -140,7 +140,7 @@ li>a {
     background-color: steelblue;
     padding-block: 0.4rem;
     padding-inline: 1rem;
-    font-size: .6rem;
+    /* font-size: .6rem; */
     border-radius: 30px;
     border: none;
     cursor: pointer;
@@ -293,7 +293,7 @@ input {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        cursor: pointer;
     }
 
     #header_menu img {
