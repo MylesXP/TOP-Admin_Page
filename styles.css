@@ -479,6 +479,16 @@ input {
         grid-template-rows: 1fr 20fr;
     }
 
+    .right-bottom-item{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right-bottom-item h5{
+        text-align: center;
+        padding-block: .1rem;
+    }
+
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1020px) {
