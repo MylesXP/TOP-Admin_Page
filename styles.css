@@ -113,6 +113,7 @@ li>a {
 
 #header_profilepic {
     padding-inline: 5%;
+    width: clamp(30px, 2rem, 4rem);
 }
 
 #header_handlepic {
@@ -123,7 +124,20 @@ li>a {
 }
 
 #header_handlepic img {
+    width: clamp(60px, 2rem, 4rem);
+    cursor: pointer;
+}
+
+#header_profilepic img {
     width: clamp(30px, 2rem, 4rem);
+    cursor: pointer;
+}
+
+#header_profilename{
+    padding-block: 0.2rem;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-inline: 0.3rem;
 }
 
 #header_handlecontainer {
@@ -136,11 +150,13 @@ li>a {
     padding-block: .2rem;
     font-size: .8rem;
     font-weight: bold;
+    margin-inline: .3rem;
 }
 
 #header_notif {
-    -webkit-padding-start: 8%;
-    padding-inline-start: 8%;
+    -webkit-margin-start: 8%;
+    margin-inline-start: 8%;
+    width: clamp(25px, 4%, 50px);
     cursor: pointer;
 }
 
@@ -151,7 +167,7 @@ li>a {
 }
 
 #header_profile {
-    background-color: rgb(154, 154, 32);
+    background-color: white;
 }
 
 #header_quickmenu {
@@ -476,7 +492,7 @@ input {
     }
 
     #right_bottom {
-        grid-template-rows: 1fr 20fr;
+        grid-template-rows: 1fr 27fr;
     }
 
     .right-bottom-item{
