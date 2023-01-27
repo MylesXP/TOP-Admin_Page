@@ -112,7 +112,7 @@ li>a {
 }
 
 #header_profilepic {
-    padding-inline: 5%;
+    padding-inline: 3%;
     width: clamp(30px, 2rem, 4rem);
 }
 
@@ -133,7 +133,7 @@ li>a {
     cursor: pointer;
 }
 
-#header_profilename{
+#header_profilename {
     padding-block: 0.2rem;
     font-size: .8rem;
     font-weight: bold;
@@ -176,7 +176,7 @@ li>a {
     background-color: white;
     align-items: center;
     position: relative;
-    margin-block: .5rem;
+    margin-block: .8rem;
 }
 
 #header_quickmenu>button {
@@ -184,12 +184,12 @@ li>a {
     color: white;
     background-color: steelblue;
     padding-block: 0.4rem;
-    padding-inline: 1rem;
+    padding-inline: .8rem;
     /* font-size: .6rem; */
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    font-size: .6rem;
+    font-size: .8rem;
     /* margin-block: 1rem; */
 }
 
@@ -432,7 +432,7 @@ input {
         font-size: .8rem;
     }
 
-    #form_body{
+    #form_body {
         grid-template-rows: 1fr 30fr;
     }
 
@@ -495,12 +495,12 @@ input {
         grid-template-rows: 1fr 27fr;
     }
 
-    .right-bottom-item{
+    .right-bottom-item {
         flex-direction: column;
         justify-content: center;
     }
 
-    .right-bottom-item h5{
+    .right-bottom-item h5 {
         text-align: center;
         padding-block: .1rem;
     }
