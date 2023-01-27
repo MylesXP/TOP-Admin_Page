@@ -220,9 +220,7 @@ li>a {
 #right_top {
     background-color: white;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: grid;
 }
 
 #right_top h6 {
@@ -232,6 +230,10 @@ li>a {
 .right-top-item {
     padding: 14px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .right-top-item:nth-child(1):after,
