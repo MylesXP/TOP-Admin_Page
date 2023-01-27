@@ -1,9 +1,57 @@
+
+:root{
+    --darkmode-color:rgb(68, 68, 68);
+}
+
 body,
 html {
     height: 100%;
     margin: 0;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+    #form_header{
+        background-color: var(--darkmode-color) !important;
+    }
+
+    #header_quickmenu{
+        background-color: var(--darkmode-color) !important;
+    }
+
+    #header_profile{
+        background-color: var(--darkmode-color) !important;
+    }
+
+    #header_quickmenu > button{
+        background-color: rgb(34, 141, 124) !important;
+    }
+
+    #form_dashboard{
+        background-color: rgb(41, 41, 41) !important;
+    }
+
+    #form_body{
+        background-color: rgb(80, 80, 80) !important;
+    }
+
+    .form-item{
+        background-color: var(--darkmode-color) !important;
+        border-left: 5px solid rgb(64, 224, 200) !important;
+    }
+
+    #right_top{
+        background-color: var(--darkmode-color) !important;
+    }
+
+    #right_bottom_item__container {
+        background-color: var(--darkmode-color) !important;
+    }
+
+    h5,h6,p,span,.fa-regular{
+        color: white;
+    }
 }
 
 .circle {
