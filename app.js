@@ -14,8 +14,4 @@ hmenu.addEventListener('click',() => {
         }
 });
 
-// fDash.addEventListener('click', () => {
-//     if()
-// })
-
 
