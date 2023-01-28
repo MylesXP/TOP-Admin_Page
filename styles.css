@@ -463,6 +463,13 @@ input {
     padding-right: 10px;
 }
 
+.form-dashboard--display{
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+    display: inline-block !important;
+}
+
 @media only screen and (max-width: 370px) {
 
     #form_body__header_right {
