@@ -465,9 +465,12 @@ input {
 
 .form-dashboard--display{
     position: fixed;
+    -webkit-position: fixed;
     height: 100vh;
     z-index: 2;
     display: inline-block !important;
+    padding-inline-start: 10px !important;
+    padding-inline-end: 15px !important;
 }
 
 @media only screen and (max-width: 370px) {
