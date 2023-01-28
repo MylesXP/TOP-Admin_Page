@@ -1,6 +1,7 @@
 
 :root{
     --darkmode-color:rgb(68, 68, 68);
+    /* color-scheme: light dark; */
 }
 
 body,
@@ -9,6 +10,7 @@ html {
     margin: 0;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     box-sizing: border-box;
+    /* color-scheme: light dark; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -530,9 +532,10 @@ input {
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        text-align: center;
     }
 
-    #header_menu img {
+    #header_menu .fa-bars {
         width: clamp(30px, 8%, 50px);
     }
 
