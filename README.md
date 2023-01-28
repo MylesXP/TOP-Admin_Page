@@ -3,5 +3,5 @@
 ### Things to Add ###
 
 - [ ] Dark mode toggle
-- [ ] Display side dashboard menu on clicking hamburger 
+- [x] Display side dashboard menu on clicking hamburger 
 
