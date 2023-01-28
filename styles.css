@@ -274,8 +274,10 @@ li>a {
     background-color: white;
     border-radius: 5px;
     display: grid;
-    -webkit-box-shadow: 13px 7px 19px -5px rgba(0, 0, 0, 0.42);
-    box-shadow: 13px 7px 19px -5px rgba(0, 0, 0, 0.42);
+    /* -webkit-box-shadow: 13px 7px 19px -5px rgba(0, 0, 0, 0.42);
+    box-shadow: 13px 7px 19px -5px rgba(0, 0, 0, 0.42); */
+    -webkit-box-shadow: 13px 7px 19px -12px rgba(0,0,0,0.42); 
+box-shadow: 13px 7px 19px -12px rgba(0,0,0,0.42);
 }
 
 #right_top h6 {
@@ -342,8 +344,8 @@ li>a {
     display: grid;
     background-color: white;
     border-radius: 5px;
-    -webkit-box-shadow: 13px 7px 19px -5px rgba(0, 0, 0, 0.42);
-    box-shadow: 13px 7px 19px -5px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: 13px 7px 19px -12px rgba(0,0,0,0.42); 
+box-shadow: 13px 7px 19px -12px rgba(0,0,0,0.42);
 }
 
 
@@ -400,8 +402,8 @@ li>a {
     padding-block: 20px;
     /* -webkit-box-shadow: 12px 10px 16px -11px rgba(0,0,0,0.61); 
 box-shadow: 12px 10px 16px -11px rgba(0,0,0,0.61); */
-    -webkit-box-shadow: 13px 7px 19px -5px rgba(0, 0, 0, 0.42);
-    box-shadow: 13px 7px 19px -5px rgba(0, 0, 0, 0.42);
+-webkit-box-shadow: 13px 7px 19px -12px rgba(0,0,0,0.42); 
+box-shadow: 13px 7px 19px -12px rgba(0,0,0,0.42);
 }
 
 .form-item>div {
