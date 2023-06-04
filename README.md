@@ -1,7 +1,15 @@
 # TOP-Admin_Page
 
-### Things to Add ###
+### The Odin Project Admin Page Project ###
 
-- [ ] Dark mode toggle
-- [x] Display side dashboard menu on clicking hamburger 
+A mock admin page, in the style of popular CMS and ticketing software like Salesforce Cloud 360 or JIRA.
+
+Features Include:
+
+* Dark Mode Detection
+
+* Responsive
+
+
+
 
